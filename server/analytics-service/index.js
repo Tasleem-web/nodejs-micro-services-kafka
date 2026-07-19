@@ -3,7 +3,7 @@ import { Kafka } from 'kafkajs';
 
 const kafka = new Kafka({
   clientId: 'analytics-service',
-  brokers: ['localhost:9094'],
+  brokers: ['localhost:9094', 'localhost:9095', 'localhost:9096'],
   connectionTimeout: 10000,
   requestTimeout: 10000,
 });
